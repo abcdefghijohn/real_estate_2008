@@ -41,4 +41,5 @@ class House
   def price_per_square_foot
     (@price.to_f / area).round(2)
   end
+
 end

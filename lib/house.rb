@@ -47,4 +47,12 @@ class House
       room.area
     end
   end
+
+  def rooms_by_category
+    hash = {}
+    @rooms.find_all do |room|
+      hash[room.category] = [room] #since there are two bedrooms when the second one is iterated through, it overwrites the first one
+    end
+    hash
+  end
 end

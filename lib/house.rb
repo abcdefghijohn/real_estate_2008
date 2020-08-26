@@ -30,4 +30,11 @@ class House
       room.area
     end.sum
   end
+
+  def details
+    [{
+      :price => @price,
+      :address => @address
+    }]
+  end
 end
